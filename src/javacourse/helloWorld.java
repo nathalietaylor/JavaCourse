@@ -8,7 +8,7 @@ package javacourse;
  *
  * @author katerinelindawitkoski
  */
-public class helloWorld {
+public class HelloWorld {
 
     /**
      * @param args the command line arguments

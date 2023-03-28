@@ -9,29 +9,40 @@ import java.util.Scanner;
  *
  * @author katerinelindawitkoski
  */
-public class aula2803JoseArrays1 {
+public class Aula1403JoseSwith {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        double A1 = 0; 
-        double A2 = 0; 
-        double A3 = 0; 
-        double mediaFinal = 0;
-        
+        System.out.println("===== Menu de opcoes =====");
+        System.out.println(" 1 - Cadastrar produtos ==");
+        System.out.println(" 2 - Lista de produtos ===");
+        System.out.println(" 3 - Sair do sistema =====");
+        System.out.println("=== Escolha uma opcao ====");
+       
         Scanner entrada = new Scanner(System.in);
         
-        System.out.println("Digite a nota A1: ");
-        A1 = entrada.nextDouble();
-        System.out.println("Digite a nota A2: ");
-        A2 = entrada.nextDouble();        
-        System.out.println("Digite a nota A3: ");
-        A3 = entrada.nextDouble();       
+        int menu = entrada.nextInt();
         
-        mediaFinal = ((0.3 * A1) + (0.3 * A2) + (0.4 * A3));
+        switch(menu){
+            case 1:
+                System.out.println("Voce escolher o menu 1");
+                System.out.println("Que eh a opcao cadastrar produtos");
+                break;
+            case 2:
+                System.out.println("Voce escolher o menu 1");
+                System.out.println("Que eh a opcao cadastrar produtos");
+                break;
+            case 3:
+                System.out.println("Voce escolher o menu 1");
+                System.out.println("Que eh a opcao cadastrar produtos");
+                break;
+            default:
+                System.out.println("Item de menu invalido");
+        }
         
-        System.out.println("A nota final vale: " + mediaFinal);
+        entrada.close();
     }
     
 }

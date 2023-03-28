@@ -9,29 +9,39 @@ import java.util.Scanner;
  *
  * @author katerinelindawitkoski
  */
-public class aula2803JoseArrays1 {
+public class Aula1303BrunoIf {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        double A1 = 0; 
-        double A2 = 0; 
-        double A3 = 0; 
-        double mediaFinal = 0;
-        
         Scanner entrada = new Scanner(System.in);
+        double nota = 0;
         
-        System.out.println("Digite a nota A1: ");
-        A1 = entrada.nextDouble();
-        System.out.println("Digite a nota A2: ");
-        A2 = entrada.nextDouble();        
-        System.out.println("Digite a nota A3: ");
-        A3 = entrada.nextDouble();       
+        System.out.println("digite sua nota ");
+        nota = entrada.nextDouble();
         
-        mediaFinal = ((0.3 * A1) + (0.3 * A2) + (0.4 * A3));
-        
-        System.out.println("A nota final vale: " + mediaFinal);
+        if(nota > 7){
+            System.out.println("Aprovado");
+            System.out.println("Parabéns");
+        } else{
+        System.out.println("Reprovado");
     }
+        
+        // testa se reprovado 
+        // testa se DP 
+        /*
+        if(nota >= 6){
+            System.out.println("aprovado");
+        }
+        if(nota < 5){
+            System.out.println("reprovado");
+        }
+        if((nota >= 5) && (nota <6)){
+            System.out.println("DP");
+        }
+        */
+        
+   }
     
 }
