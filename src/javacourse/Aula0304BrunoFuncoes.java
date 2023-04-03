@@ -9,32 +9,35 @@ import java.util.Scanner;
  *
  * @author katerinelindawitkoski
  */
-public class Aula2703BrunoVetores2 {
+public class Aula0304BrunoFuncoes {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        
         Scanner ler = new Scanner(System.in);
         double[] notas = new double[3];
-        
         double notaFinal = 0; 
         double[] peso = {0.3, 0.3, 0.4};
         
+        
+        // MinhasFuncoesNota.java
         for(int i = 0; i < 3 ; i++){
             do{
                 System.out.println("Digite a nota A" + (i + 1)+ ": ");
                 notas[i] = ler.nextDouble();
-                if((notas[i] < 0) || (notas[i]> 10)){
+                if(!MinhasFuncoesNota.verificaNota(notas[i])){ // inverte o retorno "!"
                     System.out.println("nota invalida");
                 }
-            } while ((notas[i] < 0) || (notas[i]> 10));
-        }
-        for(int i = 0; i < 3; i ++){
-            notaFinal = notaFinal + notas[i]*peso[i];
+            } while (!MinhasFuncoesNota.verificaNota(notas[i]));
         }
         
-        System.out.println("Nota final eh: " + notaFinal);
+       notaFinal = MinhasFuncoesNota.calculaMedia(notas, peso);
+
+       System.out.println("Nota final eh: " + notaFinal);
+        
     }
+    
     
 }
