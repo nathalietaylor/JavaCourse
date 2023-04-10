@@ -1,4 +1,4 @@
-package aulanetto0404;
+package javacourse.jose;
 
 import java.util.Scanner;
 
@@ -6,7 +6,7 @@ import java.util.Scanner;
  *
  * @author nathalietaylor
  */
-public class AulaNetto0404 {
+public class AulaNetto0404Exerc2 {
 
     /**
      * @param args the command line arguments

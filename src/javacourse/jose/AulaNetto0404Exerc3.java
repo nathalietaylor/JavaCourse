@@ -1,4 +1,4 @@
-package aulanetto0404;
+package javacourse.jose;
 import java.util.Random; 
 
 
@@ -7,7 +7,7 @@ import java.util.Random;
  *
  * @author nathalietaylor
  */
-public class AulaNetto0404 {
+public class AulaNetto0404Exerc3 {
 
     /**
      * @param args the command line arguments
@@ -33,19 +33,16 @@ for (int i=0; i<tamanho; i++){
 
 // encontrar o menor elemento:
 
-if(menor < sorteado ){
+/*if(menor < sorteado ){
   menor = sorteado.nextInt;
   
   
  // acrescentar variavel menor int 0
  //+ loop
 }
-}
-
-
-
-
-     
+  */ 
+        }
+ 
     }
-    
+
 }
