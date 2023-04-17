@@ -16,17 +16,68 @@ public class VendaCarro {
     private int ano = 0;
     private int km = 0;
 
-   // public VendaCarro(){
-   // }
+    public VendaCarro(){
+    }
 
     // método construtor
-    public void setCor(String cor){
-        this.cor = cor;
+    public void setCor(String cor){ // argumento cor
+        this.cor = cor; // cor = referenciando a declaração cor anterior
     }
 
     public String getCor(){
         return this.cor;
     }
 
+    private boolean testaModelo(String modelo){
+        if (modelo.equalsIgnoreCase("A") ||
+                modelo.equalsIgnoreCase("B") ||
+                modelo.equalsIgnoreCase("C")){
+            return true;
+        } else {
+            return false;
+        }
+    }
 
+    public boolean setModelo(String modelo){
+        if(testaModelo(modelo)){
+            this.modelo = modelo;
+            return true;
+        } else {
+            return false;
+        }
+    }// 'set' e 'get' são publicos
+
+    public String getModelo(){
+        return modelo;
+    }
+
+    public void setAno(int ano){
+        this.ano = ano;
+    }
+
+    public void setKm(int km){
+        this.km = km;
+    }
+
+    public void setPreco(double preco){
+        this.preco = preco;
+    }
+    public double getPreco(){
+        return preco;
+    }
+
+    public int getAno(){
+        return ano;
+    }
+    public int getkm(){
+        return km;
+    }
+
+    public void imprime(){
+        System.out.println("Modelo: " + this.modelo);
+        System.out.println("Ano: " + this.ano);
+        System.out.println("Cor: " + this.cor);
+        System.out.println("Km: " + this.km);
+        System.out.println("Preço: " + this.preco);
+    }
     }
