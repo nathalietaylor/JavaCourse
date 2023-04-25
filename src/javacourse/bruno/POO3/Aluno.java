@@ -49,7 +49,7 @@ public class Aluno { // conceito
         setTurma(turma);
 
         this.numAtividades = 3;
-        this.notas = new double[numAtividades];
+        // this.notas = new double[numAtividades];
 
         this.notas = notas;
 
