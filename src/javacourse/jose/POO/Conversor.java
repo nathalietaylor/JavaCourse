@@ -3,7 +3,7 @@ package javacourse.jose.POO;
 Faça uma Classe chamada Conversor
 Sua classe deve ter um método que receve um número de 1-7..
 e retorne uma String contendo o dia da semana correspondente
- */
+*/
 public class Conversor {
 
     public String getDiaSemana(int dia){ // pega quem? o dia da semana (dia da semana é tipo int)
