@@ -12,3 +12,7 @@ Construtor é um metodo especial. deve possuir o mesmo nome da classe e toda cla
 obj construtor: criar objetos (comportamento padrão); criar objetos já com valores iniciais; 
 
 sem indincação de retorno
+
+*Operador "this"utilizado para se referir a um atribubto da propria classe
+
+construtores com parametros (dentro dos parenteses); definem valores iniciais e construtor default deixa de ser criado automaticamente
