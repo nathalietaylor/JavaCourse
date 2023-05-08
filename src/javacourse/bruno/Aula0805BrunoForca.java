@@ -18,11 +18,32 @@ import java.util.Scanner;
  */
 public class Aula0805BrunoForca {
 
+    public static char[] carregaPalavra(){
+        String[] listaPalavras = new String[10]; // matriz de caracteres
+
+        listaPalavras[0] = "bruno";
+        listaPalavras[1] = "artes";
+        listaPalavras[2] = "carro";
+        listaPalavras[3] = "prova";
+        listaPalavras[4] = "vidro";
+
+        int linha = (int)(4*Math.random()); // converter para inteiro pq a resposta do math.random é real.
+
+        char[] resposta = new char[5];
+
+        for (int i = 0; i < 5; i++){
+            resposta[i] = listaPalavras[linha].charAt(i);
+        }
+
+        return resposta;
+
+    }
+
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        char[] palavra = {'b','r', 'u', 'n', 'o'}; // palavra certa
+        char[] palavra = carregaPalavra(); // palavra certa
         char[] resposta = new char[palavra.length]; // pega sempre o novo tamanho da palavra
         for (int i = 0; i < palavra.length; i++){
             resposta[i] = '-';
@@ -49,21 +70,16 @@ public class Aula0805BrunoForca {
                 }else {
                     temp = temp + 1;
                 }
-                if (temp ==nLetras){
-                    nErros = nErros -1;
-                    System.out.println("Você errou!!");
-                }else {
-                    System.out.println("Acertou!!");
-                }
-
-                System.out.println(resposta);
-            } // primeiro eu declado o i (inicialização) e testo ele (condição do for) ; e o i++ (é o contador, ele adiciona)
-            // --- para cada jogada percorra o vetor
-
-            if (temp == nLetras){
-                nErros = nErros -1;
             }
-
+            if (temp ==nLetras){
+                nErros = nErros -1;
+                System.out.println("Você errou!!");
+            }else {
+                System.out.println("Acertou!!");
+            }// primeiro eu declado o i (inicialização) e testo ele (condição do for) ; e o i++ (é o contador, ele adiciona)
+            // --- para cada jogada percorra o vetor
+            System.out.println(resposta);
+            System.out.println("Número de erros disponiveis: " +nErros);
         }while((nErros > 0) && (nAcertos < nLetras)); // enquanto o cara não puder tentar de novo e for menor que o número de letras
         
     }
