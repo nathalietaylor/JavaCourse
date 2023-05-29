@@ -5,25 +5,24 @@ package javacourse.bruno.POO4;
 
  */
 public class Aluno {
-    private String Nome;
+ /*   private String nome;
     private int RA;
-    private Avaliacao nota;
+    private Avaliacao nota = new Avaliacao();
 
-    this.nome = nome;
-    this.RA = RA;
-    nota = new Avaliacao();
+    //this.nome = nome;
+    //this.RA = RA;
+    // nota ;
 
     public Aluno (String nome, int RA){
         this.nome = nome;
         this.RA = RA;
-        nota = new Avaliacao()
+        this.nota = new Avaliacao();
     }
 
     public Aluno (String nome, int RA, double[] notas){
         this.nome = nome;
         this.RA = RA;
         nota = Avaliacao(notas);
-
     }
 
     public String getNome() {
@@ -49,8 +48,8 @@ public class Aluno {
     public void print(){
         System.out.println(this.nome);
         System.out.println(this.RA);
-        System.out.println(this.nota.getNota(1);
-        System.out.println(this.nota.getNota(2);
+        System.out.println(this.nota.getNota(1));
+        System.out.println(this.nota.getNota(2));
         System.out.println(this.nota.getNota(3));
-    }
+    }*/
 }

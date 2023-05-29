@@ -32,7 +32,7 @@ import java.awt.datatransfer.StringSelection;
  * @author katerinelindawitkoski
  */
 public class Avaliacao {
-    private double[] notas;
+ /*   private double[] notas;
 
     //Construtor Avaliação - contruir o objeto, criar uma instância dessa classe ou um objeto
     // a partir dessa classe.
@@ -62,17 +62,17 @@ public class Avaliacao {
         this.notas[av] = nota;
     }
 
-    public boolean setNota(double nota, int av){
+  *//*  public boolean setNota(double nota, int av){
         if(this.testaAvaliacao(av) && this.testaNota(nota)){
             this.notas[av-1] = notas;
-            return true
+            return true;
         } else {
-            return false
+            return false;
         }
-    }
+    }*//*
 
     public boolean testaAvaliacao(int av){
-        if((av > 1=) && (av <= 3)){
+        if((av > 1) && (av <= 3)){
             return true;
         } else {
             return false;
@@ -117,5 +117,5 @@ public class Avaliacao {
                 this.notas[2] + " ";
 
         return txt;
-    }
+    }*/
 }
