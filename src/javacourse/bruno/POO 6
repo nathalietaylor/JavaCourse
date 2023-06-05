@@ -1,0 +1,42 @@
+package aulabruno050623;
+import java.util.InputMismatchException;
+import java.util.Scanner;
+/**
+ *
+ * @author nathalietaylor
+ */
+public class Aulabruno050623 {
+
+    /**
+     * tratamento de exceções
+     */
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner (System.in);
+                
+        int nota = 0;
+        
+        boolean flag = false;
+       
+            do{
+                System.out.println("Digite sua nota (numero inteiro): ");
+                try{ // indica o começo da atenção do software, caso rode com normalidade, não executa o catch
+                    nota = entrada.nextInt();
+                    flag = true; // indica que executou corretamente a linha 26 e roda a linha 27
+                } catch (InputMismatchException erro){ // erro especifico dessa classe, criando um catch especifico, permite criar uma mensagem de erro direcionada já
+                    System.out.println("voce nao digitou um numero inteiro");
+                
+                }catch (Exception erro){ // caso não coloque o inteiro, na linha em que ocorre o erro, codigo para de rodar e pula para o catch - a nota não é lida
+                    System.out.println("erro na execucao");
+                    System.out.println(erro.getClass()); // indica qual foi o erro 
+                } finally{
+                    entrada.nextLine(); // sem o finally, o codigo estava guardando o enter na memoria da entrada, e assim ficava em um loopping de exceção
+                }
+            }while ((nota <0)|| (nota>10) || flag == false);
+                
+        System.out.println("A nota digitada foi: " +nota);
+
+
+
+    }
+    
+}
