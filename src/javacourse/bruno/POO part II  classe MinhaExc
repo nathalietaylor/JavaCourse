@@ -1,0 +1,25 @@
+package aulabruno050623;
+
+/**
+ *
+ * @author profslpa
+ */
+public class MinhaExc extends Exception {
+    
+    private String msg;
+    
+    public MinhaExc(){
+        this.msg = "ERRO";
+    }
+    
+    public MinhaExc (String msg){
+        this.msg = msg;
+    
+    }
+    @Override //pega metodo especifico da subclasse e substrebe ele na subclasse
+    public String getMessage(){
+        return this.msg;
+    
+    }
+    
+}
